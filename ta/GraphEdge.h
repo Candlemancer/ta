@@ -1,5 +1,3 @@
-#import "GraphNode.h"
-
 template <class Edge_Type> class GraphEdge
 {
 public:
@@ -11,7 +9,7 @@ private:
     int weight;
 };
 
-template <class Edge_Type> GraphEdge<Edge_Type>::GraphEdge(Edge_Type &adjacent_node, int node_weight)
+template <class Edge_Type> GraphEdge<Edge_Type>::GraphEdge(GraphNode<Edge_Type> &adjacent_node, int node_weight)
 {
     node = adjacent_node;
     weight = node_weight;

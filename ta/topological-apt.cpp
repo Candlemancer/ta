@@ -2,7 +2,7 @@
 #include <apt-pkg/cachefile.h>
 #include <apt-pkg/pkgcache.h>
 
-#include "GraphNode.h"
+#include "Graph.h"
 
 using namespace std;
 
