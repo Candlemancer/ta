@@ -2,13 +2,16 @@
 #include <apt-pkg/cachefile.h>
 #include <apt-pkg/pkgcache.h>
 
+#include "GraphNode.h"
+
 using namespace std;
 
 int main()
 {
-    unordered_map<string, int> myMap;
-    myMap["hello"] = 23;
-    cout << myMap["hello"] << endl;
+    unordered_map<string, GraphNode<int>> packageGraph;
+    /*packageGraph["hello"] = 23;
+    cout << packageGraph["hello"] << endl;/**/
+
     //Commenting out code to list through all installed packages. I'm about to experiment with C++ Maps.
     /*pkgInitConfig(*_config);
     pkgInitSystem(*_config, _system);
