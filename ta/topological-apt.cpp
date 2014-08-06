@@ -7,7 +7,9 @@ using namespace std;
 
 int main()
 {
-    unordered_map<string, GraphNode<int>> packageGraph;
+
+    Graph ourGraph;
+
     /*packageGraph["hello"] = 23;
     cout << packageGraph["hello"] << endl;*/
 

@@ -1,7 +1,6 @@
-/*GraphEdge::GraphEdge(GraphNode &adjacent_node)
+GraphEdge::GraphEdge(GraphNode &adjacent_node) : GraphEdge(adjacent_node, 1)
 {
-    GraphEdge(adjacent_node, 1);
-}*/
+}
 
 GraphEdge::GraphEdge(GraphNode &adjacent_node, int node_weight)
 {

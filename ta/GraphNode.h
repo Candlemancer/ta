@@ -1,15 +1,17 @@
-#ifndef NODE_H
-#define NODE_H
+#ifndef NODE_CLASS_H
+#define NODE_CLASS_H
+
+class GraphEdge;
 
 #include <vector>
-#include "GraphEdge.h"
+//#include "GraphEdge.h"
 
 using namespace std;
 
 class GraphNode
 {
 public:
-    GraphNode(string nodeString);
+    GraphNode(string nodeName);
     int getInDegree();
     void incrementInDegree();
     void decrementInDegree();
@@ -17,7 +19,7 @@ public:
     void markVisited();
     void addAdjacentNode(GraphNode &adjacentNode);
 private:
-    string element;
+    string name;
     bool isVisited;
     int inDegree;
     vector<GraphEdge> adjacentNodes;

@@ -1,6 +1,6 @@
-GraphNode::GraphNode(string nodeString)
+GraphNode::GraphNode(string nodeName)
 {
-    element = nodeString;
+    name = nodeName;
     inDegree = 0;
     isVisited = false;
     totalAdjacent = 0;

@@ -1,5 +1,5 @@
-#ifndef GRAPH_H
-#define GRAPH_H
+#ifndef GRAPH_CLASS_H
+#define GRAPH_CLASS_H
 
 #include <unordered_map>
 #include "GraphNode.h"
@@ -8,10 +8,8 @@
 class Graph
 {
 public:
-	Graph();
-	//void put();
+    //Graph();
 private:
-	unordered_map<string, GraphNode> nodeMap;
+    unordered_map<string, GraphNode> nodeMap;
 };
-
 #endif

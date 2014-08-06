@@ -1,13 +1,15 @@
-#ifndef EDGE_H
-#define EDGE_H
+#ifndef EDGE_CLASS_H
+#define EDGE_CLASS_H
 
-#include "GraphNode.h"
+class GraphNode;
+
+//#include "GraphNode.h"
 
 class GraphEdge
 {
 public:
-    //GraphEdge(GraphNode &adjacent_node); // Need to check to make sure that this is the proper way to overload a constructor.
     GraphEdge(GraphNode &adjacent_node, int node_weight);
+    GraphEdge(GraphNode &adjacent_node) : GraphEdge(adjacent_node, 1) {};
     GraphNode getAdjacentNode();
     int getWeight();
 private:
