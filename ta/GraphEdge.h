@@ -1,7 +1,7 @@
 template <class Edge_Type> class GraphEdge
 {
 public:
-    GraphEdge(GraphNode<Edge_Type> &adjacent_node) : GraphEdge(adjacent_node, 0){};
+    GraphEdge(GraphNode<Edge_Type> &adjacent_node) : GraphEdge(adjacent_node, 0){}; // Need to check to make sure that this is the proper way to overload a constructor.
     GraphEdge(GraphNode<Edge_Type> &adjacent_node, int node_weight);
     GraphNode<Edge_Type> getAdjacentNode();
     int getWeight();
