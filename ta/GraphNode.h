@@ -1,65 +1,67 @@
+#ifndef NODE_H
+#define NODE_H
+
 #include <vector>
+#include "GraphEdge.h"
 
 using namespace std;
 
-template <class Node_Type> class GraphNode
+class GraphNode
 {
 public:
-    GraphNode(Node_Type &node_element);
+    GraphNode(string nodeString);
     int getInDegree();
     void incrementInDegree();
     void decrementInDegree();
     bool getVisited();
     void setVisited();
-    void addAdjacentNode(GraphNode<Node_Type> &adjacentNode);
+    void addAdjacentNode(GraphNode &adjacentNode);
 private:
-    Node_Type element;
+    string element;
     bool isVisited;
     int inDegree;
-    vector<GraphNode<Node_Type>> adjacentNodes;
+    vector<GraphEdge> adjacentNodes;
     int totalAdjacent;
 };
 
-template <class Node_Type> GraphNode<Node_Type>::GraphNode(Node_Type &node_element)
+GraphNode::GraphNode(string nodeString)
 {
-    element = node_element;
+    element = nodeString;
     inDegree = 0;
     isVisited = false;
     totalAdjacent = 0;
-    adjacentNodes(2);
+    //adjacentNodes;
     //adjacentNodes = new vector<GraphNode<Node_Type>>(2);
 }
 
-template <class Node_Type> int GraphNode<Node_Type>::getInDegree()
+int GraphNode::getInDegree()
 {
     return inDegree;
 }
 
-template <class Node_Type> void GraphNode<Node_Type>::incrementInDegree()
+void GraphNode::incrementInDegree()
 {
     inDegree += 1;
 }
 
-template <class Node_Type> void GraphNode<Node_Type>::decrementInDegree()
+void GraphNode::decrementInDegree()
 {
     inDegree -= 1;
 }
 
-template <class Node_Type> bool GraphNode<Node_Type>::getVisited()
+bool GraphNode::getVisited()
 {
     return isVisited;
 }
 
-template <class Node_Type> void GraphNode<Node_Type>::setVisited()
+void GraphNode::setVisited()
 {
     isVisited = true;
 }
 
-/*template <class Node_Type> GraphNode<Node_Type>::~GraphNode()
+void GraphNode::addAdjacentNode(GraphNode &adjacentNode)
 {
-    delete adjacentNodes;
-    // I've commented this code out. Most resources I've read
-    // state that ussing the vector class will manage the heap
-    // in the background for us rather than trying to do so
-    // ourselvse
-}*/
+    adjacentNodes.push_back(GraphEdge(adjacentNode));
+}
+
+#endif
