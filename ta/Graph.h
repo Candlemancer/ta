@@ -5,4 +5,4 @@
 template <class Graph_Type> class Graph
 {
 
-}
+};

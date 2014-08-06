@@ -16,7 +16,7 @@ private:
     Node_Type element;
     bool isVisited;
     int inDegree;
-    vector<GraphNode<Node_Type> adjacentNodes;
+    vector<GraphNode<Node_Type>> adjacentNodes;
     int totalAdjacent;
 };
 
