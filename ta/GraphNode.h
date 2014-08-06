@@ -26,6 +26,8 @@ template <class Node_Type> GraphNode<Node_Type>::GraphNode(Node_Type &node_eleme
     inDegree = 0;
     isVisited = false;
     totalAdjacent = 0;
+    adjacentNodes(2);
+    //adjacentNodes = new vector<GraphNode<Node_Type>>(2);
 }
 
 template <class Node_Type> int GraphNode<Node_Type>::getInDegree()
@@ -52,3 +54,12 @@ template <class Node_Type> void GraphNode<Node_Type>::setVisited()
 {
     isVisited = true;
 }
+
+/*template <class Node_Type> GraphNode<Node_Type>::~GraphNode()
+{
+    delete adjacentNodes;
+    // I've commented this code out. Most resources I've read
+    // state that ussing the vector class will manage the heap
+    // in the background for us rather than trying to do so
+    // ourselvse
+}*/
