@@ -14,7 +14,7 @@ public:
     void incrementInDegree();
     void decrementInDegree();
     bool getVisited();
-    void setVisited();
+    void markVisited();
     void addAdjacentNode(GraphNode &adjacentNode);
 private:
     string element;
@@ -54,7 +54,7 @@ bool GraphNode::getVisited()
     return isVisited;
 }
 
-void GraphNode::setVisited()
+void GraphNode::markVisited()
 {
     isVisited = true;
 }

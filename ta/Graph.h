@@ -6,7 +6,7 @@ class Graph
 {
 public:
 	Graph();
-	void put();
+	//void put();
 private:
 	unordered_map<string, GraphNode> nodeMap;
 };
