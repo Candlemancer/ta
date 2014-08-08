@@ -15,6 +15,7 @@ private:
     int adjacentNodesTotal;
     vector<GraphEdge> adjacentNodes;
 public:
+    GraphNode(); //This default constructor is only here because we need it here to be compatable with unsortedmaps.
     GraphNode(string nodeName);
     void addEdge(GraphNode adjNode);
     void incrementInDegree();

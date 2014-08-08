@@ -1,5 +1,11 @@
 #include "graphnode.h"
 
+GraphNode::GraphNode()
+{
+    //This default constructor is only here because we need it here to be compatable with unsortedmaps.
+    node = "";
+}
+
 GraphNode::GraphNode(string nodeName)
 {
 	node = nodeName;
