@@ -3,7 +3,7 @@
 GraphNode::GraphNode()
 {
     //This default constructor is only here because we need it here to be compatable with unsortedmaps.
-    node = "";
+    node = "[default constructor]";
 }
 
 GraphNode::GraphNode(string nodeName)

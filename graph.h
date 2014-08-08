@@ -5,6 +5,8 @@
 #include "graphedge.h"
 #include <string>
 #include <unordered_map>
+#include <iostream>
+#include <fstream>
 using namespace std;
 class GraphNode;
 class GraphEdge;
@@ -18,6 +20,7 @@ public:
     Graph();
     void addNode(string nodeName);
     void linkNodes(string nodeSource, string nodeDest);
+    void toDotFile(string filename);
 };
 
 #endif // GRAPH_H

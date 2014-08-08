@@ -22,3 +22,11 @@ void Graph::linkNodes(string nodeSource, string nodeDest)
 {
     createReturnNode(nodeSource).addEdge(createReturnNode(nodeDest));
 }
+
+
+void Graph::toDotFile(string filename)
+{
+    ofstream outputFile(filename);
+    outputFile << "digraph TestGraph {" << endl;
+    outputFile << "}" << endl;
+}

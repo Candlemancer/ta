@@ -8,5 +8,7 @@ int main(int argc, char *argv[])
     //return a.exec();
     qDebug() << endl << "We compiled!!" << endl << endl;
     Graph test;
+
+
     return 0;
 }
