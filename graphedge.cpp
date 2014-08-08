@@ -4,6 +4,7 @@ GraphEdge::GraphEdge(GraphNode &node, int weight)
 {
     edgeWeight = weight;
     edgeNode = &node;
+    edgeNode->incrementInDegree();
 }
 
 GraphNode* GraphEdge::getNode()

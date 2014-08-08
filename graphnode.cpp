@@ -8,7 +8,7 @@ GraphNode::GraphNode(string nodeName)
 void GraphNode::addEdge(GraphNode adjNode)
 {
     adjacentNodesTotal++;
-    //adjacentNodes.push_back(GraphEdge());
+    adjacentNodes.push_back(GraphEdge(adjNode));
 }
 
 void GraphNode::incrementInDegree()

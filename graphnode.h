@@ -13,7 +13,7 @@ private:
     string node;
     int inDegree;
     int adjacentNodesTotal;
-    vector<GraphNode> adjacentNodes;
+    vector<GraphEdge> adjacentNodes;
 public:
     GraphNode(string nodeName);
     void addEdge(GraphNode adjNode);
