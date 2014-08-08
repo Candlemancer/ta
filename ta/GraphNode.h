@@ -4,6 +4,7 @@
 class GraphEdge;
 
 #include <vector>
+#include <string>
 //#include "GraphEdge.h"
 
 using namespace std;

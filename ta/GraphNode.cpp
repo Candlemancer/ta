@@ -1,3 +1,5 @@
+#include "GraphNode.h"
+
 GraphNode::GraphNode(string nodeName)
 {
     name = nodeName;

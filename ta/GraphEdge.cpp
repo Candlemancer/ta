@@ -1,8 +1,6 @@
-GraphEdge::GraphEdge(GraphNode &adjacent_node) : GraphEdge(adjacent_node, 1)
-{
-}
+#include "GraphEdge.h"
 
-GraphEdge::GraphEdge(GraphNode &adjacent_node, int node_weight)
+GraphEdge::GraphEdge(GraphNode &adjacent_node, int node_weight = 1)
 {
     node = adjacent_node;
     weight = node_weight;

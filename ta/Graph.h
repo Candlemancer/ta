@@ -8,7 +8,6 @@
 class Graph
 {
 public:
-    //Graph();
 private:
     unordered_map<string, GraphNode> nodeMap;
 };
