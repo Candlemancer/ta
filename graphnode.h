@@ -12,6 +12,7 @@ class GraphNode
 private:
     string node;
     int inDegree;
+    bool nodeVisited;
     int adjacentNodesTotal;
     vector<GraphEdge> adjacentNodes;
 public:
@@ -21,6 +22,8 @@ public:
     void incrementInDegree();
     void decrementInDegree();
     int getInDegree();
+    bool getVisted();
+    void setVisted(bool status);
 };
 
 #endif // GRAPHNODE_H
