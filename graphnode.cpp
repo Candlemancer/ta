@@ -34,12 +34,12 @@ int GraphNode::getInDegree()
     return inDegree;
 }
 
-bool getVisted()
+bool GraphNode::getVisted()
 {
     return nodeVisited;
 }
 
-void setVisted(bool status)
+void GraphNode::setVisted(bool status)
 {
     nodeVisited = status;
 }
