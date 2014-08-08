@@ -1,18 +1,18 @@
 #ifndef EDGE_CLASS_H
 #define EDGE_CLASS_H
 
-class GraphNode;
+//class GraphNode;
 
 //#include "GraphNode.h"
 
 class GraphEdge
 {
 public:
-    GraphEdge(GraphNode &adjacent_node, int node_weight);
-    GraphNode getAdjacentNode();
+    GraphEdge(GraphNode *adjacent_node, int node_weight);
+    GraphNode* getAdjacentNode();
     int getWeight();
 private:
-    GraphNode node;
+    GraphNode *node;
     int weight;
 };
 #endif
