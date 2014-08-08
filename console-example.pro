@@ -4,6 +4,9 @@
 #
 #-------------------------------------------------
 
+QMAKE_CXXFLAGS = -std=c++11 #-stdlib=libc++ -mmacosx-version-min=10.7
+QMAKE_LFLAGS = -std=c++11 #-stdlib=libc++ -mmacosx-version-min=10.7
+
 QT       += core
 
 QT       -= gui
@@ -15,4 +18,12 @@ CONFIG   -= app_bundle
 TEMPLATE = app
 
 
-SOURCES += main.cpp
+SOURCES += main.cpp \
+    graph.cpp \
+    graphnode.cpp \
+    graphedge.cpp
+
+HEADERS += \
+    graph.h \
+    graphnode.h \
+    graphedge.h
