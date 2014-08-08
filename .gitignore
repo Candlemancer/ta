@@ -1,0 +1,32 @@
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Vim Swap
+*.swp
+
+# Ignore for apt sources we download
+# apt-1.0.1ubuntu2.1/
+# apt_1.0.1ubuntu2.1.dsc
+# apt_1.0.1ubuntu2.1.tar.xz
+
+# Ignore our executable
+ta/ta
